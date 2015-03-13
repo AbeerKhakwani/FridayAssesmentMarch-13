@@ -41,14 +41,10 @@ input 2 string:The dog
 output:This word was repeated: 1
 
 
-Takes one words and looks through a 2 word string
 
-input 1 word:The
-input 2 string:The dog
-output:This word was repeated: 1
 
 Takes one words and looks through a  6 word string
 
-input 1 word:The dog went to the house
-input 2 string:The dog
+input 1 word:The
+input 2 string:The dog went to the house
 output:This word was repeated: 2

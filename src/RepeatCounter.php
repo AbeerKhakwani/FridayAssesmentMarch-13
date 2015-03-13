@@ -15,7 +15,7 @@ class RepeatCounter{
         foreach($array_string_words as $word)
         {
 
-            if (in_array($input_word1,$array_string_words ))
+            if ($input_word1==$word )
             {
 
                 $adder+=1;
