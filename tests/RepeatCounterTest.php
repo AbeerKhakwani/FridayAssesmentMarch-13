@@ -49,6 +49,28 @@
             //Assert
             $this->assertEquals(0,$result);
         }
+        function test_Repeat_Counter_letter_2Repeats()
+        {   //Arrange
+            $test_RepeatCounter= new RepeatCounter;
+            $input1 = "A";
+            $input2 = "A A";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input1,$input2);
+            //Assert
+            $this->assertEquals(2,$result);
+        }
+        function test_Repeat_Counter_word_2Repeats()
+        {   //Arrange
+            $test_RepeatCounter= new RepeatCounter;
+            $input1 = "the";
+            $input2 = "THE the";
+
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input1,$input2);
+            //Assert
+            $this->assertEquals(2,$result);
+        }
     }
 
 ?>
