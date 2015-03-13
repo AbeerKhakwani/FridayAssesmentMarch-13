@@ -21,27 +21,31 @@
 
                $input_word=$_POST['word'];
                $input_string=$_POST['repeat'];
-               $counted= str_word_count($input_word);
 
-               if (!empty( $input_word) && !empty( $input_string) ){
-
-               $new_Repeat_counter= new RepeatCounter;
-
-              $result= $new_Repeat_counter->countRepeats($input_word,$input_string);
+               $exploded=explode(" ", $input_word );
+               $counted= count($exploded);
 
 
-               return $app['twig']->render('result.twig',  array("result"=>$result ));
+               if (empty( $input_word) && empty( $input_string) ){
+
+                   return $app['twig']->render('error.twig');
 
            }
-           elseif(){
+           elseif($counted > 1){
 
-
+               return $app['twig']->render('error2.twig');
 
            }
 
 
            else {
-               return $app['twig']->render('error.twig');
+               $new_Repeat_counter= new RepeatCounter;
+
+              $result= $new_Repeat_counter->countRepeats($input_word,$input_string);
+
+
+               return $app['twig']->render('result.twig',  array("result"=>$result, "count" =>$counted ));
+
 
 
            }
