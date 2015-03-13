@@ -20,14 +20,25 @@
 
 
                $input_word=$_POST['word'];
-               $input_string=$_POST['repeat']
+               $input_string=$_POST['repeat'];
+
+               if (!empty( $input_word) && !empty( $input_string) ){
 
                $new_Repeat_counter= new RepeatCounter;
 
               $result= $new_Repeat_counter->countRepeats($input_word,$input_string);
 
 
-               return $app['twig']->render('result.twig');
+               return $app['twig']->render('result.twig',  array("result"=>$result ));
+
+           }
+
+
+           else {
+               return $app['twig']->render('error.twig');
+
+
+           }
            });
 
 
