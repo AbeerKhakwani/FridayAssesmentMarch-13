@@ -40,9 +40,6 @@ input 1 word:The
 input 2 string:The dog
 output:This word was repeated: 1
 
-
-
-
 Takes one words and looks through a  6 word string
 
 input 1 word:The
