@@ -1,22 +1,35 @@
 Takes 2 inputs A word and a string and sees how many times the word is repeated in the string.
 
 Specs:
+Takes one letter and looks through a 1 letter string which is the simplest way the program can work.
 
-input 1 word:
-input 2 string:
-output:
+input 1 word:A
+input 2 string:A
+output:1
 
+Takes one letter and looks through a 1 letter string when there are no matches
 
-input 1 word:
-input 2 string:
-output:
+input 1 word:A
+input 2 string:b
+output:0
 
+Takes one word and looks through a 1 word string
+input 1 word: the
+input 2 string:the
+output:This word was repeated : 1
 
-input 1 word:
-input 2 string:
-output:
+Takes one word and looks through a 1 word string no matches
+input 1 word: the
+input 2 string: You
+output:This word was repeated : 0
 
+Takes one letter and looks through a 2 word string
+input 1 word: A
+input 2 string: A A
+output:This word was repeated : 2
 
-input 1 word:
-input 2 string:
-output:
+Takes two words  and looks through a 2 word string
+
+input 1 word:The
+input 2 string:The the
+output:This word was repeated:
