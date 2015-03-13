@@ -1,0 +1,22 @@
+Takes 2 inputs A word and a string and sees how many times the word is repeated in the string.
+
+Specs:
+
+input 1 word:
+input 2 string:
+output:
+
+
+input 1 word:
+input 2 string:
+output:
+
+
+input 1 word:
+input 2 string:
+output:
+
+
+input 1 word:
+input 2 string:
+output:
