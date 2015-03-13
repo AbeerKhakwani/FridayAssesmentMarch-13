@@ -1,6 +1,7 @@
 <?php
-   require_once "src/ScrabbleArray.php";
-    class ScrabbleTest extends PHPUnit_Framework_TestCase
+   require_once "src/RepeatCounter.php";
+
+    class RepeatCounterTest extends PHPUnit_Framework_TestCase
     {
         function test_Repeat_Counter()
         {   //Arrange
@@ -9,7 +10,7 @@
             $input2 = "A";
 
             //Act
-            $result = $test_RepeatCounter->ScrabbleChecker($input1,$input2);
+            $result = $test_RepeatCounter->countRepeats($input1,$input2);
             //Assert
             $this->assertEquals(1,$result);
         }
