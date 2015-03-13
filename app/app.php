@@ -21,6 +21,7 @@
 
                $input_word=$_POST['word'];
                $input_string=$_POST['repeat'];
+               $counted= str_word_count($input_word);
 
                if (!empty( $input_word) && !empty( $input_string) ){
 
@@ -30,6 +31,11 @@
 
 
                return $app['twig']->render('result.twig',  array("result"=>$result ));
+
+           }
+           elseif(){
+
+
 
            }
 
